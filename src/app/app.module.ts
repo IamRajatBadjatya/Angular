@@ -9,6 +9,11 @@ import { BetterDirectiveDirective } from './directives/better-directive/better-d
 import { StructuralDirectiveDirective } from './directives/structural-directive/structural-directive.directive';
 import { ShortenPipe } from './pipes/shorten/shorten.pipe';
 import { UsersService } from './services/users/users.service';
+import { HomeComponent } from './home/home.component';
+import { UserListComponent } from './user-list/user-list.component';
+
+import { AppRoutingModule } from './app-routing.module';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +21,16 @@ import { UsersService } from './services/users/users.service';
     HighlightDirective,
     BetterDirectiveDirective,
     StructuralDirectiveDirective,
-    ShortenPipe
+    ShortenPipe,
+    HomeComponent,
+    UserListComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [UsersService],
   bootstrap: [AppComponent]

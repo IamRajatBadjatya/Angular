@@ -1,0 +1,12 @@
+<p>
+  user-list works!
+</p>
+<div>
+  <ul>
+    <li *ngFor="let user of users">
+      <app-user [myUser]="user"></app-user>
+    </li>
+  </ul>
+</div>
+
+<a routerLink="/home">Take Me Back Home</a>
