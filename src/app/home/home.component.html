@@ -1,21 +1,24 @@
-<p>
-  home works!
-</p>
+<div class="container">
 
-<h1 appHighlight>
-  Simple Attribute Directive - {{title}}
-</h1>
-<h1 [appBetterDirective]="'red'">
-  Attribute Directive with a renderer and with input property binding - {{title}}
-</h1>
-<h1 *appStructuralDirective="false">
-  Structural Directive - {{title}}
-</h1>
-<h1>
-  {{ longerTitle | shorten }}
-</h1>
-<button (click)="navigateToUserList()">
-  Take Me To New Route and Get User Data
-</button>
-<br><hr>
-<a routerLink="/user-list">Take Me To New Route and Get User Data</a>
+  <h3>Home</h3>
+
+  <h4 appHighlight>
+    Simple Attribute Directive - {{title}}
+  </h4>
+  <h4 [appBetterDirective]="'red'">
+    Attribute Directive with a renderer and with input property binding - {{title}}
+  </h4>
+  <h4 *appStructuralDirective="false">
+    Structural Directive - {{title}}
+  </h4>
+  <h4>
+    {{ longerTitle | shorten }}
+  </h4>
+  <button (click)="navigateToUserList()"
+          class="btn btn-primary">
+    Take Me To New Route and Get User Data
+  </button>
+  <br><hr>
+  <a routerLink="/user-list">Take Me To New Route and Get User Data</a>
+
+</div>

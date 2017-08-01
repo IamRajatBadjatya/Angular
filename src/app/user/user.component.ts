@@ -11,6 +11,7 @@ export class UserComponent implements OnInit {
   constructor() { }
 
   @Input() myUser: User;
+  i: number = Math.floor(Math.random() * 10) 
 
   ngOnInit() {
   }
