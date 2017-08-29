@@ -14,6 +14,8 @@ import { UserListComponent } from './user-list/user-list.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { UserComponent } from './user/user.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { UserComponent } from './user/user.component';
     ShortenPipe,
     HomeComponent,
     UserListComponent,
-    UserComponent
+    UserComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>One Way Data Binding</h2>
+  <p>
+    {{ interpolationText }}
+  </p>
+  <br>
+  <input type="text" class="form-control" [value]="propertyBindingText">
+  <br>
+  <button class="btn btn-primary"
+          (click)="clickEventHandler()">
+          I'm an Example for Event Binding. Click Me!
+  </button>
+  <br>
+  <hr>
+  <h2>Two Way Data Binding</h2>
+  <input type="text" class="form-control" [(ngModel)]="twoWayDataBindingText">
+  <br>
+  <p>{{twoWayDataBindingText}}</p>
+  <br>
+  <hr>
+  <app-child [dataToShow]="dataForChildComponent"></app-child>
+</div>
